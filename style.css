@@ -1,4 +1,4 @@
-body, h1, h2, p {
+body, h1, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -11,8 +11,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    overflow: auto; 
-
+    overflow: auto;
 }
 
 .top-section {
@@ -24,7 +23,7 @@ body {
 }
 
 .top-section img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     max-height: 500px;
     object-fit: cover;
@@ -93,27 +92,75 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
 .image-grid p {
-    font-size: 18px; 
-    margin: 10px 0; 
-    font-family: 'Lobster', cursive; 
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: 'Lobster', cursive;
     color: #ffffff;
 }
 
-
 .top-section .rounded-rectangle {
-    background-color: #f5d098; 
+    background-color: #f5d098;
 }
 
 .image-gallery .rounded-rectangle {
-    background-color: #f5d098; 
+    background-color: #f5d098;
 }
-
 
 .bottom-section .rounded-rectangle {
-    background-color: #f5d098; 
+    background-color: #f5d098;
 }
 
+#property-details ul {
+    display: none;
+}
+
+#property-details:hover ul {
+    display: block;
+}
+
+#property-details {
+    background-color: #f5d098;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#property-details:hover {
+    width: 500px;
+}
+
+#other-informations p {
+    display: none;
+}
+
+#other-informations:hover p {
+    display: block;
+}
+
+#other-informations {
+    background-color: #f5d098;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#other-informations h3 {
+    cursor: pointer;
+}
+
+#other-informations:hover {
+    width: 500px;
+}
